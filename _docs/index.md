@@ -4,34 +4,30 @@ permalink: /docs/home/
 redirect_from: /docs/index.html
 ---
 
-**Welcome to the documentation for [name of API]!**
+**Welcome to the documentation for Smart Explorer API v1!**
 
-[Name of API] is a [type - RESTful, SOAP, platform-based] API that you can use to:
+Smart Explorer API v1 is a RESTful API that you can use to:
 
-* [Brief example use case - 1 sentence]
-* [Brief example use case - 1 sentence]
-* [Brief example use case - 1 sentence]
+* create and propagate historical places (museum etc.)
+* explore many places without any problem
+* gather statistics about tourism industry
 
-[Name of API] uses [protocol for requests, such as HTTP protocols `GET`, `POST`, `PUT`, and `DELETE`]. Responses are returned in [language] format. [Other items to mention about requests and responses, if applicable: whether users can specify the response language using the `ACCEPT` header.]
+Smart Explorer API v1 uses HTTP protocol and HTTP method: `GET`, `POST`, `PUT`, and `DELETE`. Responses are returned only in JSON format.
 
-To access [name of API], you'll need [describe access requirements, which might include an account with your product, an authentication token, username/password, or other credentials].
+To access Smart Explorer API v1, you'll need only email address. After registration you'll receive verification code that you have to send due to confirm your identity (read bellow).
 
-The base URL is [your API's base URL]. Each user is limited to [number] requests per second. If you exceed this rate limit, [explain what happens if rate limit is exceeded---for example, will users see an error response?].
+For trial version there are no request limit etc.
 
 ## Authentication
 
-[Details in this section will vary based on your authentication method, but make sure to explain these things:
+Trial version has no API key or something similar.
+To access API you have to register by simple way - HTTP Basic.
 
-* If your API requires an authentication token or key, how do users get one?
-* If authentication tokens or keys expire, what's the expiration interval? How do users refresh expired tokens or keys?
-* How do users pass authentication information to your API? For example, do they use an Authorization header?
+In Smart Explorer we have two types of users:
+* SpotMaker -> able to create spots, read full statistics, rates and opinions
+* Explorer -> common user able to search for spots, visit these and give rates and opinions
 
-The prompts in this section assume that users will need an authentication token and the token should be kept private.]
+If you want to be only <b>Explorer</b> - just have an account on Facebook. Authentication oAuth2 is enough. You will be asked to allow the application to your basic data.
 
-You'll need to include an [authentication token] with all of your requests to [name of API]. Anyone with your [authentication token] can access your data through our API, so keep your [authentication token] private. Don't share it with other users, and make sure to remove it from any code samples.
-
-To get your [authentication token], [explain how to get the token---for example, contact Customer Support, send a call with your username and password to the API, or go to your account at our website].
-
-[Authentication tokens] expire [list expiration interval - for example, every 2 weeks or after 1 year]. If your [authentication token] expires, [explain how to refresh - for example, contact Customer Support or go to your customer account and click "Refresh Token"].
-
-To pass your authentication information with your API requests, [explain how to pass authentication token---for example, use the authorization header in cURL].
+If you want to be <b>SpotMaker</b> `POST` your data to this endpoint: http://51.38.129.50:8085/api/v1/registration <br>
+Further information and details you can find here <a href="http://localhost:4000/mvd-template/docs/workflows/">more</a>

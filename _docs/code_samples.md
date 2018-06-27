@@ -11,3 +11,10 @@ You can start with cURL command line code samples, but you should add samples in
 
 To specify language for your code blocks, follow the [Markdown code and syntax highlighting](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet#code-and-syntax-highlighting) section in Adam Pritchard's Markdown cheatsheet.]
 
+
+	```
+	curl --request GET \
+	  --url 'https://api.payrollrecord.com/timesheet?employee={employee ID number}&date=2017-05-25' \
+	  --header 'authorization: {your authentication token}'
+	```
+

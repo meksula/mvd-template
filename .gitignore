@@ -4,3 +4,6 @@ _site
 *.gem
 .bundle
 vendor/bundle
+nohup.out
+.nohup.out
+

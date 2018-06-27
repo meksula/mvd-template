@@ -1,5 +1,5 @@
 ---
-title: Markdown reference example
+title: API reference
 permalink: /docs/mdreference/
 ---
 
@@ -32,8 +32,8 @@ Name | Type | Description | Required?
 
 [Code or pseudocode sample of a complete request for this endpoint, including header and body, followed by a table that lists each element in the example request]
 
-Element | Type | Description | Required?
-------- | ---- | ----------- | ---------
+Element | Type | Description | Required? | Method |
+------- | ---- | ----------- | --------- | ------ |
 [Element as it appears in request] | [Array, Object, String, Integer, or Float] | [Brief description of what information the element represents, including default and valid values] | [Required or Optional]
 [Element as it appears in request] | [Array, Object, String, Integer, or Float] | [Brief description of what information the element represents, including default and valid values] | [Required or Optional]
 [Element as it appears in request] | [Array, Object, String, Integer, or Float] | [Brief description of what information the element represents, including default and valid values] | [Required or Optional]

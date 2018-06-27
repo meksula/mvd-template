@@ -2,7 +2,46 @@
 layout: default
 ---
 
-<div class="container text-center">
-    <p>The page you are looking for cannot be found.</p>
-    <h2>404</h2>
+<div class="header-container jumbotron">
+    <div class="container">
+        <h1>Smart Explorer v 1.0</h1>
+        <p><a class="btn btn-primary btn-lg" href="{{ "/docs/home/" | prepend: site.baseurl }}" role="button">Get started</a></p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h2 class="header-light regular-pad">About Smart Explorer v 1.0</h2>
+          <p>
+			Smart Explorer v 1.0 allows you to easily explore the area where you are.
+			<br>You can quickly locate the nearest historical place that you can visit.
+			<hr>RESTful API collects data about historical places, ratings, reviews, statistics of visits, etc.
+			New features that will allow you to plan routes will be added soon.
+			You can also become a content creator. All you have to do is register and the objects you create can be searched by visitors.
+          </p>
+      </div>
+      <div class="col-md-6">
+        <h2 class="header-light regular-pad">News and updates</h2>
+        <p class="header-light regular-pad"><b>26-06-2018</b> - the first trial version available.</p>
+      </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-map" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Workflows</h3>
+            <p>These optimal <a href="/mvd-template/docs/workflows/">workflows</a> walk you through a few high-impact tasks you can accomplish with your API.</p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-code" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Code Samples</h3>
+            <p>Check out these <a href="/mvd-template/docs/code_samples/">code samples</a> for common use cases to get up and running with the API as quickly as possible.</p>
+        </div>
+        <div class="col-sm-4">
+            <h1 class="text-center"><i class="fa fa-rocket" aria-hidden="true"></i></h1>
+            <h3 class="text-center">Reference</h3>
+            <p>Looking for endpoints? The <a href="/mvd-template/docs/reference/">reference</a> section lists details for every endpoint in the API.</p>
+        </div>
+    </div>
 </div>

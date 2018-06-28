@@ -7,14 +7,79 @@ layout: default
         <div class="col-md-8">
             <h1>{{ page.title }}</h1>
             <div id="markdown-content-container">{{ content }}</div>
-            <p class="text-center">
-              <br />
-              <a target="_blank" href="{{site.git_edit_address}}/{{ page.path }}" class="btn btn-default githubEditButton" role="button">
-                <i class="fa fa-pencil fa-lg"></i> Improve this page
-              </a>
-            </p>
+            
             <hr>
         </div>
-
     </div>
+    DOCTYPE html>
+<html lang="en">
+	<head>
+		  <title>Geocode  Example</title>
+		    <meta charset="utf-8">
+		      <meta name="viewport" content="width=device-width, initial-scale=1">
+		        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+			    
+			  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+			    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+			     
+	</head>
+	<body>
+		<div>
+		<span>Your Latitude : </span><span id="lat"></span><br>
+		<span>Your Longitude : </span><span id="lng"></span><br>
+		<button id="btn">Click Here To Get Lat And Lng</button>
+		<script>
+$(document).ready(function() {
+	    $('#btn').click(function(e) {
+		             $.ajax({
+				     		type : 'POST',
+								data: '', 
+								url: "<!DOCTYPE html>
+									<html lang="en">
+									<head>
+									  <title>Geocode  Example</title>
+									    <meta charset="utf-8">
+									      <meta name="viewport" content="width=device-width, initial-scale=1">
+									        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+										    
+										  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+										    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+										     
+									</head>
+									<body>
+										<span>Your Latitude : </span><span id="lat"></span><br>
+										<span>Your Longitude : </span><span id="lng"></span><br>
+										<button id="btn">Click Here To Get Lat And Lng</button>
+										<script>
+$(document).ready(function() {
+	    $('#btn').click(function(e) {
+		             $.ajax({
+				     		type : 'POST',
+								data: '', 
+										url: "https://www.googleapis.com/geolocation/v1/geolocate?key=AIzaSyCW0lvagDP67ulkwwP7yAIBHJoj2HT0apM", 
+												success: function(result){
+													        		$('#lat').html(result['location']['lat']);
+																				$('#lng').html(result['location']['lng']);
+																									
+																				    		}});
+			     					
+			         });
+} );
+										</script>
+										
+									</body>
+									</html>", 
+												success: function(result){
+													        		$('#lat').html(result['location']['lat']);
+																				$('#lng').html(result['location']['lng']);
+																									
+																				    		}});
+			     					
+			         });
+} );
+		</script>
+
+<div/>
+	</body>
+</html>
 </div>
